@@ -1,0 +1,288 @@
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+    }
+
+    header {
+        background: #1a1a1a;
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: #c9a96e;
+    }
+
+    .hero {
+        background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f') no-repeat center/cover;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .hero h2 {
+        background: rgba(0,0,0,0.6);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    section {
+        padding: 40px 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .cards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1;
+        min-width: 250px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: black;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .btn {
+        background: #c9a96e;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    footer {
+        background: #1a1a1a;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* WhatsApp */
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .whatsapp-float img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    @media (max-width: 768px) {
+        .cards {
+            flex-direction: column;
+        }
+    }
+/* ===== CONTATO MODERNO ===== */
+
+#contato{
+    padding-top: 80px;
+}
+
+.contato-box{
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 50px;
+
+    display: flex;
+    gap: 50px;
+
+    align-items: center;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* efeito de fundo */
+.contato-box::before{
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    background: rgba(201,169,110,0.08);
+
+    border-radius: 50%;
+
+    top: -120px;
+    right: -120px;
+}
+
+/* lado esquerdo */
+.contato-info{
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.contato-tag{
+    display: inline-block;
+
+    background: rgba(201,169,110,0.15);
+
+    color: #c9a96e;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.contato-info h2{
+    font-size: 2.5rem;
+
+    color: #1a1a1a;
+
+    margin-bottom: 20px;
+
+    line-height: 1.2;
+}
+
+.contato-info p{
+    color: #555;
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+/* detalhes */
+.contato-detalhes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detalhe{
+    display: flex;
+    flex-direction: column;
+}
+
+.detalhe strong{
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.detalhe span{
+    color: #666;
+}
+
+/* formulário */
+.contato-form{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* inputs */
+.contato-form input,
+.contato-form textarea{
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    padding: 16px;
+
+    font-size: 1rem;
+
+    transition: 0.3s;
+
+    background: #fafafa;
+
+    resize: none;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus{
+    outline: none;
+
+    border-color: #c9a96e;
+
+    background: white;
+
+    box-shadow: 0 0 12px rgba(201,169,110,0.2);
+}
+
+/* botão */
+.contato-form .btn{
+    padding: 16px;
+
+    border-radius: 12px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.contato-form .btn:hover{
+    background: #b89255;
+
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVO */
+@media(max-width: 900px){
+
+    .contato-box{
+        flex-direction: column;
+        padding: 35px;
+    }
+
+    .contato-info h2{
+        font-size: 2rem;
+    }
+
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gianini advocacia</title>
+<link rel= "stylesheet" href="style/index.css">
+
+</head>
+
+<body>
+
+<header>
+    <h1>Gianini advocacia</h1>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#areas">Áreas</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Defendendo seus direitos com excelência</h2>
+</div>
+
+<section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Somos um escritório de advocacia especializado em diversas áreas do direito, oferecendo atendimento personalizado e soluções jurídicas eficientes.</p>
+</section>
+
+<section id="areas">
+    <h2>Áreas de Atuação</h2>
+
+    <div class="cards">
+        <a href="civil.html" class="card">
+            <h3>Direito Civil</h3>
+            <p>Contratos, indenizações e responsabilidade civil.</p>
+        </a>
+
+        <a href="trabalhista.html" class="card">
+            <h3>Direito Trabalhista</h3>
+            <p>Defesa de trabalhadores e empresas.</p>
+        </a>
+
+        <a href="penal.html" class="card">
+            <h3>Direito Penal</h3>
+            <p>Atuação em processos criminais.</p>
+        </a>
+    </div>
+</section>
+
+<section id="contato">
+
+    <div class="contato-box">
+
+        <div class="contato-info">
+
+            <span class="contato-tag">
+                Atendimento Jurídico
+            </span>
+
+            <h2>
+                Entre em contato com nosso escritório
+            </h2>
+
+            <p>
+                Nossa equipe oferece atendimento personalizado para analisar
+                sua situação com responsabilidade, sigilo e estratégia jurídica.
+            </p>
+
+            <div class="contato-detalhes">
+
+                <div class="detalhe">
+                    <strong>Telefone</strong>
+                    <span>(13) 98883-0368</span>
+                </div>
+
+                <div class="detalhe">
+                    <strong>Email</strong>
+                    <span>contato@gianiniadvocacia.com</span>
+                </div>
+
+                <div class="detalhe">
+                    <strong>Atendimento</strong>
+                    <span>Segunda à Sexta • 08h às 18h</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <form class="contato-form" onsubmit="enviarMensagem(event)">
+
+            <input type="text" placeholder="Seu nome" required>
+
+            <input type="email" placeholder="Seu e-mail" required>
+
+            <textarea 
+                placeholder="Descreva brevemente sua situação"
+                rows="6"
+                required>
+            </textarea>
+
+            <button class="btn">
+                Solicitar Atendimento
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<footer>
+    <p>© 2026 Silva & Associados</p>
+</footer>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/5513988830368?text=Olá,%20gostaria%20de%20uma%20consulta" 
+   class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+<script>
+function enviarMensagem(e) {
+    e.preventDefault();
+    alert("Mensagem enviada!");
+}
+</script>
+
+</body>
+</html>
