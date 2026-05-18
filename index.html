@@ -78,7 +78,7 @@
 
                 <div class="detalhe">
                     <strong>Email</strong>
-                    <span>contato@gianiniadvocacia.com</span>
+                    <span>enzogarciapg07@gmail.com</span>
                 </div>
 
                 <div class="detalhe">
@@ -90,22 +90,21 @@
 
         </div>
 
-        <form class="contato-form" onsubmit="enviarMensagem(event)">
+        <form id="formContato" class="contato-form" onsubmit="enviarMensagem(event)">
 
-            <input type="text" placeholder="Seu nome" required>
-
-            <input type="email" placeholder="Seu e-mail" required>
-
-            <textarea 
+            <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+        
+            <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+        
+            <textarea name="mensagem" id="mensagem"
                 placeholder="Descreva brevemente sua situação"
                 rows="6"
-                required>
-            </textarea>
-
-            <button class="btn">
+                required></textarea>
+        
+            <button type="submit" class="btn">
                 Solicitar Atendimento
             </button>
-
+        
         </form>
 
     </div>
@@ -121,12 +120,7 @@
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
 </a>
 
-<script>
-function enviarMensagem(e) {
-    e.preventDefault();
-    alert("Mensagem enviada!");
-}
-</script>
+<script src="/js/script.js"></script>
 
 </body>
 </html>
